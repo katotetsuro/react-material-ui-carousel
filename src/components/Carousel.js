@@ -362,7 +362,8 @@ function CarouselItem(props)
 {
     const swipeHandlers = useSwipeable({
         onSwipedLeft: () => props.next(),
-        onSwipedRight: () => props.prev()
+        onSwipedRight: () => props.prev(),
+        preventDefaultTouchmoveEvent: false
     })
 
     return (
